@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="300.0" style="-fx-background-color: #ffffcc;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="helloFX.ScheduleController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#990000" height="68.0" layoutY="-1.0" stroke="#990000" strokeType="INSIDE" width="300.0" />
+      <Label alignment="CENTER" layoutX="91.0" layoutY="19.0" prefHeight="30.0" prefWidth="194.0" text="الجدولة الأسبوعية" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="27.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffcc" height="68.0" layoutX="-1.0" layoutY="482.0" stroke="#990000" strokeType="INSIDE" width="300.0" />
+      <ImageView fitHeight="38.0" fitWidth="42.0" layoutX="18.0" layoutY="490.0" onMouseClicked="#toSetting">
+         <image>
+            <Image url="@../Images/setting%20white.png" />
+         </image>
+         <effect>
+            <Bloom />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="profile" fitHeight="34.0" fitWidth="32.0" layoutX="245.0" layoutY="491.0" onMouseClicked="#toProfile" onMouseDragEntered="#toProfile">
+         <image>
+            <Image url="@../Images/profile%20white.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="56.0" layoutX="164.0" layoutY="484.0" pickOnBounds="true" preserveRatio="true" />
+      <Label alignment="CENTER_RIGHT" layoutX="223.0" layoutY="528.0" onMouseDragEntered="#toProfile" text="الملف الشخصي" wrapText="true">
+         <font>
+            <Font name="Calibri" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="175.0" layoutY="531.0" onMouseClicked="#toMainPage" text="الرئيسية" wrapText="true">
+         <font>
+            <Font name="Calibri" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="18.0" layoutY="531.0" onMouseClicked="#toSetting" text="الإعدادات" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="56.0" fitWidth="56.0" layoutX="38.0" layoutY="6.0">
+         <image>
+            <Image url="@../Images/Saudi%20red-modified.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="42.0" layoutX="93.0" layoutY="487.0">
+         <image>
+            <Image url="@../Images/schedule%20black1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="49.0" layoutX="167.0" layoutY="487.0" onMouseClicked="#toMainPage">
+         <image>
+            <Image url="@../Images/home%20white1%20.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER_RIGHT" layoutX="97.0" layoutY="531.0" prefHeight="16.0" prefWidth="34.0" text="الجدولة" wrapText="true">
+         <font>
+            <Font name="Calibri" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="189.0" layoutY="213.0" mnemonicParsing="false" onAction="#fullShift" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #e40303; -fx-border-color: #1e0101#1e0101;" textFill="#e40303" />
+      <Button layoutX="103.0" layoutY="213.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #ffffff; -fx-border-color: #1e0101#1e0101;" textFill="#1e0101" />
+      <Button layoutX="17.0" layoutY="213.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #0b8313; -fx-border-color: #1e0101#1e0101;" textFill="#1e0101" />
+      <Button fx:id="button2A" layoutX="189.0" layoutY="165.0" mnemonicParsing="false" onAction="#buttonHandler2A" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #ffffff; -fx-border-color: #1e0101#1e0101;" textFill="#1e0101" />
+      <Button fx:id="button2B" layoutX="103.0" layoutY="165.0" mnemonicParsing="false" onAction="#buttonHandler2B" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #ffffff; -fx-border-color: #1e0101#1e0101;" textFill="#1e0101" />
+      <Button fx:id="button2C" layoutX="17.0" layoutY="165.0" mnemonicParsing="false" onAction="#buttonHandler2C" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #ffffff; -fx-border-color: #1e0101#1e0101;" textFill="#1e0101" />
+      <Button fx:id="button1A" layoutX="189.0" layoutY="118.0" mnemonicParsing="false" onAction="#buttonHandler" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #ffffff; -fx-border-color: #1e0101#1e0101;" textFill="#1e0101">
+         <effect>
+            <ColorAdjust />
+         </effect></Button>
+      <Button fx:id="button1B" layoutX="103.0" layoutY="118.0" mnemonicParsing="false" onAction="#buttonHandler1B" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #ffffff; -fx-border-color: #1e0101#1e0101;" textFill="#1e0101" />
+      <Button fx:id="button1C" layoutX="17.0" layoutY="118.0" mnemonicParsing="false" onAction="#buttonHandler1C" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #ffffff; -fx-border-color: #1e0101#1e0101;" textFill="#1e0101" />
+      <Button layoutX="189.0" layoutY="308.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #0b8313; -fx-border-color: #1e0101#1e0101;" textFill="#1e0101" />
+      <Button layoutX="103.0" layoutY="308.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #e40303; -fx-border-color: #1e0101#1e0101;" textFill="#1e0101" />
+      <Button layoutX="17.0" layoutY="308.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #ffffff; -fx-border-color: #1e0101#1e0101;" textFill="#1e0101" />
+      <Button layoutX="189.0" layoutY="260.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #ffffff; -fx-border-color: #1e0101#1e0101;" />
+      <Button layoutX="103.0" layoutY="260.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #0b8313; -fx-border-color: #1e0101#1e0101;" textFill="#0b8313" />
+      <Button layoutX="17.0" layoutY="260.0" mnemonicParsing="false" onAction="#fullShift" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #e40303; -fx-border-color: #1e0101#1e0101;" textFill="#1e0101" />
+      <Button fx:id="saveChanges" layoutX="199.0" layoutY="448.0" mnemonicParsing="false" onAction="#saveChanges" prefHeight="31.0" prefWidth="89.0" text="حفظ التغييرات">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="224.0" layoutY="72.0" prefHeight="22.0" prefWidth="14.0" text="أ" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="132.0" layoutY="68.0" prefHeight="22.0" prefWidth="27.0" text="ب" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="64.0" prefHeight="22.0" prefWidth="27.0" text="ج" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="195.0" layoutY="85.0" prefHeight="25.0" prefWidth="75.0" text="٨:٠٠ص - ٤:٠٠م" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="86.0" prefHeight="25.0" prefWidth="80.0" text="٤:٠٠م - ١٢:٠٠ص" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="86.0" prefHeight="25.0" prefWidth="89.0" text="١٢:٠٠ص - ٨:٠٠ص" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="265.0" layoutY="119.0" prefHeight="40.0" prefWidth="33.0" text="الأحد" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="189.0" layoutY="403.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #ffffff; -fx-border-color: #1e0101#1e0101;" textFill="#1e0101" />
+      <Button layoutX="103.0" layoutY="403.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #0b8313; -fx-border-color: #1e0101#1e0101;" textFill="#1e0101" />
+      <Button layoutX="17.0" layoutY="403.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #e40303; -fx-border-color: #1e0101#1e0101;" textFill="#1e0101" />
+      <Button layoutX="189.0" layoutY="355.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #e40303; -fx-border-color: #1e0101#1e0101;" textFill="#1e0101" />
+      <Button layoutX="103.0" layoutY="355.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #ffffff; -fx-border-color: #1e0101#1e0101;" textFill="#1e0101" />
+      <Button layoutX="17.0" layoutY="355.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #0b8313; -fx-border-color: #1e0101#1e0101;" textFill="#1e0101" />
+      <Label fx:id="SaveChangesLable" alignment="CENTER" layoutX="18.0" layoutY="450.0" prefHeight="25.0" prefWidth="178.0" textFill="#b90000" wrapText="true">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="266.0" layoutY="165.0" prefHeight="40.0" prefWidth="30.0" text="الاثنين" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="266.0" layoutY="214.0" prefHeight="40.0" prefWidth="29.0" text="الثلاثاء" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="264.0" layoutY="356.0" prefHeight="40.0" prefWidth="34.0" text="الجمعة" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="265.0" layoutY="308.0" prefHeight="40.0" prefWidth="34.0" text="الخميس" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="265.0" layoutY="260.0" prefHeight="40.0" prefWidth="33.0" text="الاربعاء" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="264.0" layoutY="403.0" prefHeight="40.0" prefWidth="31.0" text="السبت" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="Lable1Full" alignment="CENTER" layoutX="200.0" layoutY="221.0" prefHeight="26.0" prefWidth="53.0" wrapText="true">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font></Label>
+      <Label fx:id="Lable2Full" alignment="CENTER" layoutX="28.0" layoutY="268.0" prefHeight="26.0" prefWidth="53.0" wrapText="true">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font></Label>
+      <Label fx:id="Lable3Full" alignment="CENTER" layoutX="116.0" layoutY="316.0" prefHeight="26.0" prefWidth="53.0" wrapText="true">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="Lable5Full" alignment="CENTER" layoutX="28.0" layoutY="411.0" prefHeight="26.0" prefWidth="53.0" wrapText="true">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="Lable4Full" alignment="CENTER" layoutX="199.0" layoutY="364.0" prefHeight="26.0" prefWidth="53.0" wrapText="true">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

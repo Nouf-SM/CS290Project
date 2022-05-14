@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="300.0" style="-fx-background-color: #ffffcc;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="helloFX.RequestLeaveApprovalController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#990000" height="50.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+      <Label alignment="CENTER" layoutX="92.0" layoutY="7.0" prefHeight="36.0" prefWidth="121.0" text="طلب إجازة" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="237.0" layoutY="66.0" text="الاسم " textFill="#990000" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="171.0" layoutY="139.0" text="الهوية الوطنية" textFill="#990000" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="258.0" layoutY="221.0" prefHeight="36.0" prefWidth="33.0" text="من " textFill="#990000" wrapText="true">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="116.0" layoutY="328.0" prefHeight="36.0" prefWidth="168.0" text="سبب طلب الإجازة" textFill="#990000" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="name_label" alignment="CENTER" layoutX="17.0" layoutY="101.0" prefHeight="30.0" prefWidth="266.0" style="-fx-background-color: white; -fx-border-color: #990000;">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="id_label" alignment="CENTER" layoutX="17.0" layoutY="173.0" prefHeight="30.0" prefWidth="266.0" style="-fx-background-color: white; -fx-border-color: #990000;">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="send_request" alignment="CENTER" layoutX="91.0" layoutY="473.0" mnemonicParsing="false" onAction="#SendRequest" prefHeight="39.0" prefWidth="121.0" style="-fx-background-color: #990000;" text="إرسال الطلب " textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="arrow" fitHeight="33.0" fitWidth="25.0" layoutX="259.0" layoutY="10.0" onMouseClicked="#goBack">
+         <image>
+            <Image url="@../Images/arrow.png" />
+         </image>
+      </ImageView>
+      <DatePicker fx:id="datePicker1" layoutX="104.0" layoutY="226.0" prefHeight="26.0" prefWidth="153.0" />
+      <DatePicker fx:id="datePicker2" layoutX="104.0" layoutY="263.0" prefHeight="26.0" prefWidth="153.0" />
+      <Label alignment="CENTER" layoutX="267.0" layoutY="257.0" prefHeight="36.0" prefWidth="25.0" text="إلى" textFill="#990000" wrapText="true">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="output_date1Lable" alignment="CENTER" layoutX="155.0" layoutY="299.0" prefHeight="26.0" prefWidth="128.0" wrapText="true">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font></Label>
+      <Button fx:id="select_date1Button" layoutX="13.0" layoutY="225.0" mnemonicParsing="false" onAction="#select_date1ButtonHandler" prefHeight="26.0" prefWidth="85.0" text="حفظ التاريخ">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font></Button>
+      <Button fx:id="select_date2Button" layoutX="13.0" layoutY="262.0" mnemonicParsing="false" onAction="#select_date2ButtonHandler" prefHeight="26.0" prefWidth="85.0" text="حفظ التاريخ">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font></Button>
+      <Label fx:id="output_date2Lable" alignment="CENTER" layoutX="11.0" layoutY="298.0" prefHeight="28.0" prefWidth="134.0" wrapText="true">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font></Label>
+      <Label fx:id="SendMessageLable" alignment="CENTER" layoutX="28.0" layoutY="516.0" prefHeight="26.0" prefWidth="243.0" textFill="#02f516">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font></Label>
+      <TextArea layoutX="27.0" layoutY="365.0" prefHeight="97.0" prefWidth="252.0" style="-fx-border-color: #990000;" />
+   </children>
+</AnchorPane>

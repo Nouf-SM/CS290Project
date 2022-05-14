@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="300.0" style="-fx-background-color: #ffffcc;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="helloFX.SettingsController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#990000" height="50.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+      <Label alignment="CENTER" layoutX="38.0" layoutY="8.0" prefHeight="25.0" prefWidth="226.0" text="الإعدادات" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="25.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffcc" height="68.0" layoutY="482.0" stroke="#990000" strokeType="INSIDE" width="300.0" />
+      <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="98.0" layoutY="492.0" onMouseClicked="#toScheduling">
+         <image>
+            <Image url="@../Images/schedule%20white.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="48.0" layoutX="168.0" layoutY="489.0" onMouseClicked="#toHome">
+         <image>
+            <Image url="@../Images/home%20white1%20.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER_RIGHT" layoutX="225.0" layoutY="531.0" onMouseClicked="#toProfile" text="الملف الشخصي" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="173.0" layoutY="531.0" text="الرئيسية" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="101.0" layoutY="531.0" text="الجدولة" wrapText="true">
+         <font>
+            <Font name="Calibri Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="18.0" layoutY="531.0" text="الإعدادات" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="42.0" layoutX="18.0" layoutY="491.0">
+         <image>
+            <Image url="@../Images/setting%20black.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="32.0" layoutX="242.0" layoutY="493.0" onMouseClicked="#toProfile">
+         <image>
+            <Image url="@../Images/profile%20white.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="86.0" layoutY="429.0" mnemonicParsing="false" onAction="#logOut" prefHeight="40.0" prefWidth="128.0" style="-fx-background-color: #990000;" text="تسجيل الخروج" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER_RIGHT" layoutX="119.0" layoutY="400.0" opacity="0.6" text="تواصل معنا" textFill="#990000" wrapText="true">
+         <font>
+            <Font name="Calibri" size="17.0" />
+         </font>
+      </Label>
+      <Accordion layoutX="39.0" layoutY="203.0" />
+      <GridPane alignment="TOP_RIGHT" layoutX="17.0" layoutY="82.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="219.0" prefWidth="269.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="167.0" minWidth="10.0" prefWidth="55.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="151.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="218.0" minWidth="10.0" prefWidth="64.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="0.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="48.0">
+               <image>
+                  <Image url="@../Images/language.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="60.0" fitWidth="48.0" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Images/password.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="34.0" fitWidth="37.0" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../Images/phone.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER_RIGHT" text="اللغة" textFill="#990000" wrapText="true" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Calibri" size="23.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="RIGHT" prefHeight="23.0" prefWidth="145.0" text="تغيير كلمة المرور" textAlignment="CENTER" textFill="#990000" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Calibri" size="23.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" text="تحديث رقم الجوال" textFill="#990000" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Calibri" size="23.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="38.0" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../Images/notification1.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER_RIGHT" text="تلقي الإشعارات" textFill="#990000" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Calibri" size="23.0" />
+               </font>
+            </Label>
+            <CheckBox alignment="TOP_RIGHT" mnemonicParsing="false" prefHeight="9.0" prefWidth="18.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" style="-fx-background-color: #990000;" text="تحديث" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="28.0" prefWidth="63.0" style="-fx-background-color: #990000;" text="تغيير" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+            </Button>
+            <ChoiceBox fx:id="choiceBox" prefWidth="150.0" style="-fx-background-color: #990000;" GridPane.columnIndex="2" />
+         </children>
+      </GridPane>
+      <Label alignment="CENTER_RIGHT" layoutX="124.0" layoutY="375.0" opacity="0.6" prefHeight="25.0" prefWidth="55.0" text="من نحن؟" textFill="#990000" wrapText="true">
+         <font>
+            <Font name="Calibri" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="87.0" fitWidth="92.0" layoutX="105.0" layoutY="282.0" opacity="0.68">
+         <image>
+            <Image url="@../Images/Saudi%20red-modified.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

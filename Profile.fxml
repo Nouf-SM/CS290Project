@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="300.0" style="-fx-background-color: #ffffcc;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="helloFX.ProfileController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#990000" height="50.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+      <Label alignment="CENTER" layoutX="38.0" layoutY="8.0" prefHeight="25.0" prefWidth="226.0" text="الملف الشخصي" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="143.0" fitWidth="143.0" layoutX="79.0" layoutY="48.0">
+         <image>
+            <Image url="@../Images/profile.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER_RIGHT" layoutX="240.0" layoutY="178.0" text="الاسم" textFill="#990000" wrapText="true">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="176.0" layoutY="254.0" text="الهوية الوطنية" textFill="#990000" wrapText="true">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="163.0" layoutY="332.0" text="الـــبريد الإلكتروني" textFill="#990000" wrapText="true">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="199.0" layoutY="408.0" text="رقم الهاتف" textFill="#990000" wrapText="true">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="name_label" alignment="CENTER" layoutX="20.0" layoutY="212.0" prefHeight="30.0" prefWidth="266.0" style="-fx-background-color: white; -fx-border-color: #990000;">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="id_label" alignment="CENTER" layoutX="20.0" layoutY="287.0" prefHeight="30.0" prefWidth="266.0" style="-fx-background-color: white; -fx-border-color: #990000;">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="email_label" alignment="CENTER" layoutX="20.0" layoutY="367.0" prefHeight="30.0" prefWidth="266.0" style="-fx-background-color: white; -fx-border-color: #990000;">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="phone_label" alignment="CENTER" layoutX="20.0" layoutY="441.0" prefHeight="30.0" prefWidth="266.0" style="-fx-background-color: white; -fx-border-color: #990000;">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffcc" height="68.0" layoutY="482.0" stroke="#990000" strokeType="INSIDE" width="300.0" />
+      <ImageView fitHeight="34.0" fitWidth="32.0" layoutX="248.0" layoutY="491.0">
+         <image>
+            <Image url="@../Images/profileblack.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="98.0" layoutY="492.0" onMouseClicked="#toScheduling">
+         <image>
+            <Image url="@../Images/schedule%20white.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="42.0" layoutX="18.0" layoutY="490.0" onMouseClicked="#toSetting">
+         <image>
+            <Image url="@../Images/setting%20white.png" />
+         </image>
+         <effect>
+            <Bloom />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="48.0" layoutX="168.0" layoutY="489.0" onMouseClicked="#toHome">
+         <image>
+            <Image url="@../Images/home%20white1%20.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER_RIGHT" layoutX="229.0" layoutY="530.0" text="الملف الشخصي" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="173.0" layoutY="531.0" text="الرئيسية" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="101.0" layoutY="531.0" text="الجدولة" wrapText="true">
+         <font>
+            <Font name="Calibri Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="18.0" layoutY="531.0" onMouseClicked="#toSetting" text="الإعدادات" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
